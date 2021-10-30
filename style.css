@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(/dark-geometric-a9def9.png);
+    color: #280c54;
+    text-align: center;
+}
+
+h1 {
+    font-size: 60px;
+    padding-top: 20vh;
+    text-shadow: 2px 2px 0 #a9def9, 3px 3px 0 #280c54;
+}
+
+p {
+    font-size: 25px;
+    width: 80vw;
+    max-width: 600px;
+    margin: auto;
+    padding: 50px;
+}
+
+input[type="submit"] {
+    width: fit-content;
+    padding: 10px;
+    text-transform: uppercase;
+    background: #280c54;
+    color: #a9def9;
+    border: solid 1px #280c54;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
