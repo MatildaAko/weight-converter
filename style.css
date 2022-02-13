@@ -29,6 +29,7 @@ p {
 
 input[type="submit"] {
   width: fit-content;
+  height: auto;
   padding: 10px;
   text-transform: uppercase;
   background: #280c54;
@@ -66,7 +67,7 @@ input {
   border: solid 1px #280c54;
 }
 
-button {
+.converter-buttons {
   margin-top: 20px;
   padding: 10px 8px;
   background: #a9def9;

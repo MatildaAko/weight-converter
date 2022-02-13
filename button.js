@@ -1,3 +1,3 @@
-function buttonClicked() {
-    window.location.href = "./converter.html";
+function openConverter() {
+  window.location.href = "./converter.html";
 }
