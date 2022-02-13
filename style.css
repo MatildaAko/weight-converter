@@ -44,7 +44,7 @@ form {
   background: #a9def9;
   padding: 20px 0 40px;
   width: 420px;
-  height: 250px;
+  height: auto;
 }
 fieldset {
   border: none;
@@ -73,6 +73,7 @@ input {
   background: #a9def9;
   border: solid 1px #280c54;
   color: #280c54;
+  cursor: pointer;
 }
 
 .metric-button {
@@ -83,6 +84,11 @@ input {
   display: flex;
   flex-direction: column;
   padding: 50px;
+}
+.metric-paragraph,
+.imperial-paragraph {
+  padding: 20px;
+  width: auto;
 }
 
 #tabbed-content ul {

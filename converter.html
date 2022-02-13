@@ -16,7 +16,7 @@
                 <li data-target="#imperial">Imperial</li>
             </ul>
             <div class="panels active" id="metric">
-                <form action="">
+                <form action="" class="metric-form">
                     <fieldset>
                         <legend>Please Enter Your Weight</legend>
                         <div class="label-wrapper"><label for="weightkg">Kilograms *</label>
@@ -29,12 +29,15 @@
                             <input type="number" name="heightcm" id="heightcm">
                         </div>
                     </fieldset>
-                    <button class="metric-button converter-buttons">Convert Weight</button>
-                    <button class="metric-button converter-buttons">Calculate BMI</button>
+                    <button id="metric-convert-btn" class="metric-button converter-buttons convert-btn">Convert
+                        Weight</button>
+                    <button id="metric-calculate-btn" class="metric-button calculate-btn converter-buttons">Calculate
+                        BMI</button>
+                    <p class="metric-paragraph"></p>
                 </form>
             </div>
             <div class="panels" id="imperial">
-                <form action="">
+                <form action="" class="imperial-form">
                     <fieldset>
                         <legend>Please Enter Your Weight</legend>
                         <div class="label-wrapper imperial-label"><label for="weightlb">Pounds *</label>
@@ -51,8 +54,9 @@
                             <input type="number" name="heightin" id="heightin">
                         </div>
                     </fieldset>
-                    <button class="converter-buttons">Convert Weight</button>
-                    <button class="converter-buttons">Calculate BMI</button>
+                    <button id="imperial-convert-btn" class="converter-buttons convert-btn">Convert Weight</button>
+                    <button id="imperial-calculate-btn" class="converter-buttons calculate-btn">Calculate BMI</button>
+                    <p class="imperial-paragraph"></p>
                 </form>
             </div>
         </div>
