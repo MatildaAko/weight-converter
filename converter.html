@@ -1,18 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Weight Converter</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Weight Converter</title>
+    </head>
 
-<body>
-    <h1>Weight Converter</h1>
-    <p>This Weight Converter will take your weight in pounds and convert it into kilograms, depending on your weight, you will be told if you need to go on a diet or not.*</p>
-    <h6>* Not factually accurate</h6>
-</body>
-<script src="weight-converter.js"></script>
+    <body>
+        <h1>Weight Converter</h1>
+        <div id="tabbed-content">
+            <ul class="tabs">
+                <li data-target="#metric" class="active">Metric</li>
+                <li data-target="#imperial">Imperial</li>
+            </ul>
+            <div class="panels active" id="metric">
+                <form action="">
+                    <fieldset>
+                        <legend>Please Enter Your Weight</legend>
+                        <div class="label-wrapper"><label for="weightkg">Kilograms *</label>
+                            <input type="number" name="weightkg" id="weightkg" required>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Please Enter Your Height</legend>
+                        <div class="label-wrapper"><label for="heightcm">Centimeters</label>
+                            <input type="number" name="heightcm" id="heightcm">
+                        </div>
+                    </fieldset>
+                    <button class="metric-button">Convert Weight</button>
+                    <button class="metric-button">Calculate BMI</button>
+                </form>
+            </div>
+            <div class="panels" id="imperial">
+                <form action="">
+                    <fieldset>
+                        <legend>Please Enter Your Weight</legend>
+                        <div class="label-wrapper imperial-label"><label for="weightlb">Pounds *</label>
+                            <input type="number" name="weightlb" id="weightlb" required>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Please Enter Your Height</legend>
+                        <div class="label-wrapper imperial-label"><label for="heightft">Feet</label>
+                            <input type="number" name="heightft" id="heightft">
+                        </div>
+                        <br />
+                        <div class="label-wrapper imperial-label"><label for="heightin">Inches</label>
+                            <input type="number" name="heightin" id="heightin">
+                        </div>
+                    </fieldset>
+                    <button>Convert Weight</button>
+                    <button>Calculate BMI</button>
+                </form>
+            </div>
+        </div>
+        <script src="weight-converter.js"></script>
+        <script src="tabs.js"></script>
+    </body>
+
 
 </html>

@@ -1,35 +1,115 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-image: url("dark-geometric-a9def9.png");
-    color: #280c54;
-    text-align: center;
+  background-image: url("dark-geometric-a9def9.png");
+  color: #280c54;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
 }
 
 h1 {
-    font-size: 60px;
-    padding-top: 20vh;
-    text-shadow: 2px 2px 0 #a9def9, 3px 3px 0 #280c54;
+  font-size: 60px;
+  padding-top: 20vh;
+  text-shadow: 2px 2px 0 #a9def9, 3px 3px 0 #280c54;
 }
 
 p {
-    font-size: 25px;
-    width: 80vw;
-    max-width: 600px;
-    margin: auto;
-    padding: 50px;
+  font-size: 25px;
+  width: 80vw;
+  max-width: 600px;
+  margin: auto;
+  padding: 50px;
 }
 
 input[type="submit"] {
-    width: fit-content;
-    padding: 10px;
-    text-transform: uppercase;
-    background: #280c54;
-    color: #a9def9;
-    border: solid 1px #280c54;
-    cursor: pointer;
-    letter-spacing: 1px;
+  width: fit-content;
+  padding: 10px;
+  text-transform: uppercase;
+  background: #280c54;
+  color: #a9def9;
+  border: solid 1px #280c54;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+form {
+  border: solid 1px #280c54;
+  background: #a9def9;
+  padding: 20px 0 40px;
+  width: 420px;
+  height: 250px;
+}
+fieldset {
+  border: none;
+  padding: 15px 60px;
+  padding-bottom: 0px;
+}
+legend {
+  padding: 15px;
+  padding-bottom: 0;
+}
+.label-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.imperial-label {
+  margin-left: 20px;
+}
+input {
+  height: 20px;
+  border: solid 1px #280c54;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 8px;
+  background: #a9def9;
+  border: solid 1px #280c54;
+  color: #280c54;
+}
+
+.metric-button {
+  margin-top: 40px;
+}
+
+#tabbed-content {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+#tabbed-content ul {
+  align-self: start;
+  display: flex;
+}
+
+#tabbed-content li {
+  display: inline-block;
+  padding: 10px 14px;
+  color: #280c54;
+  background-color: #a9def9;
+  border: solid 1px #280c54;
+  border-bottom: none;
+  cursor: pointer;
+  margin-right: 0;
+}
+#tabbed-content li:nth-of-type(1) {
+  border-right: none;
+}
+#tabbed-content .panels {
+  display: none;
+}
+#tabbed-content .panels.active {
+  display: block;
+}
+
+#tabbed-content li.active {
+  background-color: #280c54;
+  color: #a9def9;
 }
